@@ -147,7 +147,7 @@ body {
    font-weight: normal;
    font-size: 15px;
    line-height: 30px;
-	color: #838C95;
+	 color: #838C95;
 
    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	-webkit-text-size-adjust: 100%;
@@ -259,10 +259,10 @@ blockquote cite a:visited { color: #8B9798; border: none }
 
 /* Abbreviations */
 abbr {
-   font-family: 'opensans-bold', sans-serif;
+  font-family: 'opensans-bold', sans-serif;
 	font-variant: small-caps;
 	text-transform: lowercase;
-   letter-spacing: .5px;
+  letter-spacing: .5px;
 	color: gray;
 }
 abbr:hover { cursor: help; }
@@ -274,7 +274,7 @@ abbr:hover { cursor: help; }
 	padding: 14px 6px 0 0;
 	font-size: 84px;
 	font-family: /* Copperplate */ 'opensans-bold', sans-serif;
-   line-height: 60px;
+  line-height: 60px;
 	text-indent: 0;
 	background: transparent;
 	color: inherit;
@@ -356,7 +356,7 @@ li p { }
 	margin: 6px 0 0 0;
 	font-size: 13px;
 	font-family: 'opensans-regular', sans-serif;
-   color: #8B9798;
+  color: #8B9798;
 }
 
 /* definition list */
@@ -535,18 +535,17 @@ input[type="email"],
 textarea,
 select {
    display: block;
-   padding: 18px 15px;
-   margin: 0 0 24px 0;
+   padding: 14px 15px;
+   margin: 0 0 30px 0;
    border: 0;
    outline: none;
    vertical-align: middle;
    min-width: 225px;
-	max-width: 100%;
-   font-size: 15px;
+	 max-width: 100%;
+   font-size: 17px;
    line-height: 24px;
-	color: #647373;
-	background: #D3D9D9;
-
+	 color: #647373;
+   background: #D3D9D9;
 }
 
 /* select { padding: 0;
@@ -558,7 +557,7 @@ input[type="password"]:focus,
 input[type="email"]:focus,
 textarea:focus {
    color: #B3B7BC;
-	background-color: #3d4145;
+	 background-color: #3d4145;
 }
 
 textarea { min-height: 220px; }
@@ -566,13 +565,13 @@ textarea { min-height: 220px; }
 label,
 legend {
    font: 16px/24px 'opensans-bold', sans-serif;
-	margin: 12px 0;
+	 margin: 12px 0;
    color: #3d4145;
    display: block;
 }
 label span,
 legend span {
-	color: #8B9798;
+   color: #8B9798;
    font: 14px/24px 'opensans-regular', sans-serif;
 }
 
