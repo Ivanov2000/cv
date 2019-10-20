@@ -41,6 +41,7 @@ function optionSelectionParameter(e){
   let id = event.getAttribute('id-parameter');
   let option = event.options[e.target.selectedIndex];
   let input = document.querySelector(`input[id-measure="${id}"]`);
+  input.removeAttribute('disabled');
   input.style.background = '#D3D9D9';
   input.style.color = '#647373';
   input.value = '';
@@ -125,7 +126,7 @@ function tagOption(text='',type='none',measure='',price='',display='block'){
 function tagInput(text='', status=false, color='', id='', index=''){
   let input = document.createElement('input');
   input.type = "text";
-  input.disabled = status;
+  input.disabled = true;
   input.setAttribute(id, index);
   input.setAttribute("value", text);
   input.style.backgroundColor = color;
