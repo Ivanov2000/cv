@@ -811,14 +811,21 @@ properly.
    }
 }
 
+@media (min-width:769px){
+  .section-h1{
+    margin-top: 5.0rem;
+  }
+}
+
 @media (min-width:200px) and (max-width:768px) {
    .section-block{
-     background: #fff;
+     background:#D3D9D9;
    }
    .section-h1{
      margin-top: 3.1rem;
    }
    .section-txt{
+     font-size: 1.8rem;
      text-align:justify;
    }
 
