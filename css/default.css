@@ -811,7 +811,7 @@ properly.
   }
 }
 
-@media (min-width:769px){
+@media (min-width:769px) and (max-width:2408px){
   .section-h1{
     margin-top: 5.0rem;
   }
