@@ -806,9 +806,9 @@ properly.
 }
 
 @media (min-width:100px) and (max-width:1018px) {
-   .calculator-hide{
+  .calculator-hide{
        display:none;
-   }
+  }
 }
 
 @media (min-width:769px){
