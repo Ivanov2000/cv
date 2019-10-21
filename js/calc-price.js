@@ -1,6 +1,6 @@
 window.onload = function(){
   let calculator = document.querySelector('#calculator');
-  calculator.appendChild( createTableCalculator(DATA_PRICE) )
+  calculator.appendChild( createTableCalculator(DATA_STORE) )
 }
 
 function createTableCalculator(data){

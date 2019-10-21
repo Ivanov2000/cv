@@ -1,5 +1,5 @@
- const DATA_PRICE = [
-  { //1
+ const DATA_STORE = [
+  { // ===================================================================== 1
     materials:[
       {material: "Cиловой кабель"},
       {material: "3-х жильный",  type: 1},
@@ -18,7 +18,7 @@
       {parameter: "сечение 95мм²", type:2 ,price:50, measure:'м.'}
     ]
   },
-  { //2
+  { //2 ===================================================================== 2
     materials:[
       {material: "Слаботочный кабель"},
       {material: "UTP, TB, Телефон",  type:1}
@@ -30,14 +30,14 @@
       {parameter: "Телефонный",       type:1 ,price:'20', measure:'м.'}
     ]
   },
-  { //3
+  { //3 ===================================================================== 3
     materials:[
       {material: "Труба, кабель-канал"},
-      {material: "Труба гофрированная", type:1, measure:'м.'},
-      {material: "Труба ПВХ, ПНД",      type:2, measure:'м.'},
-      {material: "Металлорукав",        type:3, measure:'м.'},
-      {material: "Кабель канал",        type:4, measure:'м.'},
-      {material: "Труба металлическая", type:5, measure:'м.'}
+      {material: "Труба гофрированная", type:1},
+      {material: "Труба ПВХ, ПНД",      type:2},
+      {material: "Металлорукав",        type:3},
+      {material: "Кабель канал",        type:4},
+      {material: "Труба металлическая", type:5}
     ],
     parameters:[
       {parameter: "укажите парамы"},
@@ -54,43 +54,222 @@
       {parameter: "до 60Х40" , type:4, price:50, measure:'м.'},
       {parameter: "до 110Х60", type:5, price:50, measure:'м.'}
     ]
+  },
+  { // 4 ===================================================================== 4
+    materials:[
+      {title_material: "Монтаж лотка"},
+      {material: "Лоток металлический", type:1},
+      {material: "Кронштейн",           type:2},
+      {material: "Подвес",              type:3},
+      {material: "Крышка",              type:4},
+      {material: "Перегородка",         type:5},
+      {material: "Угол/тройник",        type:6},
+      {material: "Подъем/опуск",        type:7}
+    ],
+    parameters:[
+      {title_parameter: "Размеры"},
+      {parameter: "ширина до 200мм", type:1, price:5, measure:'м. '},
+      {parameter: "ширина до 400мм", type:1, price:5, measure:'м. '},
+      {parameter: "ширина до 600мм", type:1, price:5, measure:'м. '},
+      {parameter: "металлический",   type:2, price:5, measure:'шт.'},
+      {parameter: "металлический",   type:3, price:5, measure:'шт.'},
+      {parameter: "металлическая",   type:4, price:5, measure:'шт.'},
+      {parameter: "металлическая",   type:5, price:5, measure:'шт.'},
+      {parameter: "металлический",   type:6, price:5, measure:'шт.'},
+      {parameter: "металлическая",   type:7, price:5, measure:'шт.'}
+    ]
+  },
+  { // 5 ===================================================================== 5
+    materials:[
+      {material: "Штробление"},
+      {material: "в бетоне",        type:1},
+      {material: "в пеноблоке",     type:2},
+      {material: "в кирпиче",       type:3},
+      {material: "штукатурка штроб",type:4}
+    ],
+    parameters:[
+      {parameter: "Ширина Х Глубина"},
+      {parameter: "20Х40", type:1, price:58, measure:'м.'},
+      {parameter: "40Х40", type:1, price:58, measure:'м.'},
+      {parameter: "60Х40", type:1, price:58, measure:'м.'},
+      {parameter: "100Х40",type:1, price:58, measure:'м.'},
+      {parameter: "20Х40", type:2, price:58, measure:'м.'},
+      {parameter: "40Х40", type:2, price:58, measure:'м.'},
+      {parameter: "60Х40", type:2, price:58, measure:'м.'},
+      {parameter: "100Х40",type:2, price:58, measure:'м.'},
+      {parameter: "20Х40", type:3, price:58, measure:'м.'},
+      {parameter: "40Х40", type:3, price:58, measure:'м.'},
+      {parameter: "60Х40", type:3, price:58, measure:'м.'},
+      {parameter: "100Х40",type:3, price:58, measure:'м.'},
+      {parameter: "до 100Х40",type:4, price:58, measure:'м.'}
+    ]
+  },
+  { // 6 ===================================================================== 6
+    materials:[
+      {material: "Сквозное сверление"},
+      {material: "в металле",  type:1},
+      {material: "в пеноблоке",type:2},
+      {material: "в кирпиче",  type:3},
+      {material: "в бетоне",   type:4}
+    ],
+    parameters:[
+      {parameter: "диаметр мм."},
+      {parameter: "до Ø32 мм", type:1, price:59, measure:'см.'},
+      {parameter: "до Ø32 мм", type:2, price:59, measure:'см.'},
+      {parameter: "до Ø75 мм", type:2, price:50, measure:'см.'},
+      {parameter: "до Ø32 мм", type:3, price:51, measure:'см.'},
+      {parameter: "до Ø75 мм", type:3, price:52, measure:'см.'},
+      {parameter: "до Ø32 мм", type:4, price:53, measure:'см.'},
+      {parameter: "до Ø75 мм", type:4, price:54, measure:'см.'}
+    ]
+  },
+  { // 7 ===================================================================== 7
+    materials:[
+      {material: ""},
+      {material: "", type:1}
+
+    ],
+    parameters:[
+      {parameter: ""},
+      {parameter: "", type:1, price:5, measure:'м. '},
+
+    ]
+  },
+  { // 8 ===================================================================== 8
+    materials:[
+      {material: ""},
+      {material: "", type:1}
+
+    ],
+    parameters:[
+      {title_parameter: ""},
+      {parameter: "", type:1, price:5, measure:'м. '},
+
+    ]
+  },
+  { // 9 ===================================================================== 9
+    materials:[
+      {material: ""},
+      {material: "", type:1}
+
+    ],
+    parameters:[
+      {title_parameter: ""},
+      {parameter: "", type:1, price:5, measure:'м. '},
+
+    ]
+  },
+  { // 10 ===================================================================== 10
+    materials:[
+      {material: ""},
+      {material: "", type:1}
+
+    ],
+    parameters:[
+      {title_parameter: ""},
+      {parameter: "", type:1, price:5, measure:'м. '},
+
+    ]
+  },
+  { // 11 ===================================================================== 11
+    materials:[
+      {material: ""},
+      {material: "", type:1}
+
+    ],
+    parameters:[
+      {title_parameter: ""},
+      {parameter: "", type:1, price:5, measure:'м. '},
+
+    ]
+  },
+  { // 12 ===================================================================== 12
+    materials:[
+      {material: ""},
+      {material: "", type:1}
+
+    ],
+    parameters:[
+      {title_parameter: ""},
+      {parameter: "", type:1, price:5, measure:'м. '},
+
+    ]
+  },
+  { // 13 ===================================================================== 13
+    materials:[
+      {material: ""},
+      {material: "", type:1}
+
+    ],
+    parameters:[
+      {title_parameter: ""},
+      {parameter: "", type:1, price:5, measure:'м. '},
+
+    ]
+  },
+  { // 14 ===================================================================== 14
+    materials:[
+      {material: ""},
+      {material: "", type:1}
+
+    ],
+    parameters:[
+      {title_parameter: ""},
+      {parameter: "", type:1, price:5, measure:'м. '},
+
+    ]
+  },
+  { // 15 ===================================================================== 15
+    materials:[
+      {material: ""},
+      {material: "", type:1}
+
+    ],
+    parameters:[
+      {title_parameter: ""},
+      {parameter: "", type:1, price:5, measure:'м. '},
+
+    ]
+  },
+  { // 16 ===================================================================== 16
+    materials:[
+      {material: ""},
+      {material: "", type:1}
+
+    ],
+    parameters:[
+      {title_parameter: ""},
+      {parameter: "", type:1, price:5, measure:'м. '},
+
+    ]
+  },
+  { // 17 ===================================================================== 17
+    materials:[
+      {material: ""},
+      {material: "", type:1}
+
+    ],
+    parameters:[
+      {title_parameter: ""},
+      {parameter: "", type:1, price:5, measure:'м. '},
+
+    ]
+  },
+  { // 18 ===================================================================== 18
+    materials:[
+      {material: ""},
+      {material: "", type:1}
+
+    ],
+    parameters:[
+      {title_parameter: ""},
+      {parameter: "", type:1, price:5, measure:'м. '},
+
+    ]
   }
 ]
 
 
-
-
-  // ], //3
-  // [
-  //   {title_material: "Монтаж лотка"},
-  //   {material: "Лоток металлический", type:1, measure:'м.'},
-  //   {material: "Кронштейн",           type:0, measure:'шт.'  },
-  //   {material: "Подвес",              type:0, measure:'шт.'  },
-  //   {material: "Крышка",              type:0, measure:'шт.'  },
-  //   {material: "Перегородка",         type:0, measure:'шт.'  },
-  //   {material: "Угол/тройник",        type:0, measure:'шт.'  },
-  //   {material: "Подъем/опуск",        type:0, measure:'шт.'  },
-  //   {title_parameter: "Размеры"},
-  //   {parameter: "ширина до 200мм", type:1, price:50},
-  //   {parameter: "ширина до 400мм", type:1, price:50},
-  //   {parameter: "ширина до 600мм", type:1, price:50}
-  // ], //4
-  // [
-  //   {title_parameter: "Размер"},
-  //   {parameter: "20Х20", type:1, price:50},
-  //   {parameter: "40Х40", type:1, price:50},
-  //   {parameter: "60Х40", type:1, price:50},
-  //   {parameter: "100Х40",type:1, price:50},
-  //   {parameter: "20Х40", type:2, price:50},
-  //   {parameter: "40Х40", type:2, price:50},
-  //   {parameter: "60Х40", type:2, price:50},
-  //   {parameter: "100Х40",type:2, price:50},
-  //   {parameter: "20Х40", type:3, price:50},
-  //   {parameter: "40Х40", type:3, price:50},
-  //   {parameter: "60Х40", type:3, price:50},
-  //   {parameter: "100Х40",type:3, price:50},
-  //   {parameter: "до 100Х40",type:4,price:50}
-  // ], //5
   // [
   //   {title_parameter: "Размер"},
   //   {parameter: "до Ø32 мм", type:2, price:50},
