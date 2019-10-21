@@ -1,58 +1,58 @@
- const DATA = [
+ const DATA_PRICE = [
   { //1
     materials:[
       {material: "Cиловой кабель"},
-      {material: "3-х жильный",  type: 1, measure:'метр.01'},
-      {material: "5-х жильный",  type: 2, measure:'метр.02'}
+      {material: "3-х жильный",  type: 1},
+      {material: "5-х жильный",  type: 2}
     ],
     parameters:[
-      {parameter: "укажите параметры"},
-      {parameter: "сечение 2,5мм²",type:1 ,price:50},
-      {parameter: "сечение 4мм²",  type:2 ,price:50},
-      {parameter: "сечение 6мм²",  type:1 ,price:50},
-      {parameter: "сечение 10мм²", type:1 ,price:50},
-      {parameter: "сечение 10мм²", type:2 ,price:50},
-      {parameter: "сечение 16мм²", type:2 ,price:50},
-      {parameter: "сечение 35мм²", type:2 ,price:50},
-      {parameter: "сечение 50мм²", type:2 ,price:50},
-      {parameter: "сечение 95мм²", type:2 ,price:50}
+      {parameter: "укажите парамы"},
+      {parameter: "сечение 2,5мм²",type:1 ,price:50, measure:'м.'},
+      {parameter: "сечение 4мм²",  type:2 ,price:50, measure:'м.'},
+      {parameter: "сечение 6мм²",  type:1 ,price:50, measure:'м.'},
+      {parameter: "сечение 10мм²", type:1 ,price:50, measure:'м.'},
+      {parameter: "сечение 10мм²", type:2 ,price:50, measure:'м.'},
+      {parameter: "сечение 16мм²", type:2 ,price:50, measure:'м.'},
+      {parameter: "сечение 35мм²", type:2 ,price:50, measure:'м.'},
+      {parameter: "сечение 50мм²", type:2 ,price:50, measure:'м.'},
+      {parameter: "сечение 95мм²", type:2 ,price:50, measure:'м.'}
     ]
   },
   { //2
     materials:[
       {material: "Слаботочный кабель"},
-      {material: "UTP, TB, Телефон",     type:1, measure:'метр.'}
+      {material: "UTP, TB, Телефон",  type:1}
     ],
     parameters:[
-      {parameter: "укажите параметры",type:1 ,price:'20'},
-      {parameter: "UTP (интернет)",   type:1 ,price:'20'},
-      {parameter: "TB (антена)",      type:1 ,price:'20'},
-      {parameter: "Телефонный",       type:1 ,price:'20'}
+      {parameter: "укажите параметры",type:1 ,price:'20', measure:'м.'},
+      {parameter: "UTP (интернет)",   type:1 ,price:'20', measure:'м.'},
+      {parameter: "TB (антена)",      type:1 ,price:'20', measure:'м.'},
+      {parameter: "Телефонный",       type:1 ,price:'20', measure:'м.'}
     ]
   },
   { //3
     materials:[
       {material: "Труба, кабель-канал"},
-      {material: "Труба гофрированная", type:1, measure:'метр.'},
-      {material: "Труба ПВХ, ПНД",      type:2, measure:'метр.'},
-      {material: "Металлорукав",        type:3, measure:'метр.'},
-      {material: "Кабель канал",        type:4, measure:'метр.'},
-      {material: "Труба металлическая", type:5, measure:'метр.'}
+      {material: "Труба гофрированная", type:1, measure:'м.'},
+      {material: "Труба ПВХ, ПНД",      type:2, measure:'м.'},
+      {material: "Металлорукав",        type:3, measure:'м.'},
+      {material: "Кабель канал",        type:4, measure:'м.'},
+      {material: "Труба металлическая", type:5, measure:'м.'}
     ],
     parameters:[
-      {parameter: "укажите параметры"},
-      {parameter: "до Ø20 мм", type:1, price:50},
-      {parameter: "до Ø20 мм", type:2, price:50},
-      {parameter: "до Ø32 мм", type:1, price:50},
-      {parameter: "до Ø32 мм", type:2, price:50},
-      {parameter: "до Ø32 мм", type:3, price:50},
-      {parameter: "до Ø32 мм", type:5, price:50},
-      {parameter: "до Ø50 мм", type:1, price:50},
-      {parameter: "до Ø50 мм", type:2, price:50},
-      {parameter: "до Ø50 мм", type:1, price:50},
-      {parameter: "до 25Х16" , type:4, price:50},
-      {parameter: "до 60Х40" , type:4, price:50},
-      {parameter: "до 110Х60", type:5, price:50}
+      {parameter: "укажите парамы"},
+      {parameter: "до Ø20 мм", type:1, price:50, measure:'м.'},
+      {parameter: "до Ø20 мм", type:2, price:50, measure:'м.'},
+      {parameter: "до Ø32 мм", type:1, price:50, measure:'м.'},
+      {parameter: "до Ø32 мм", type:2, price:50, measure:'м.'},
+      {parameter: "до Ø32 мм", type:3, price:50, measure:'м.'},
+      {parameter: "до Ø32 мм", type:5, price:50, measure:'м.'},
+      {parameter: "до Ø50 мм", type:1, price:50, measure:'м.'},
+      {parameter: "до Ø50 мм", type:2, price:50, measure:'м.'},
+      {parameter: "до Ø50 мм", type:1, price:50, measure:'м.'},
+      {parameter: "до 25Х16" , type:4, price:50, measure:'м.'},
+      {parameter: "до 60Х40" , type:4, price:50, measure:'м.'},
+      {parameter: "до 110Х60", type:5, price:50, measure:'м.'}
     ]
   }
 ]
@@ -63,7 +63,7 @@
   // ], //3
   // [
   //   {title_material: "Монтаж лотка"},
-  //   {material: "Лоток металлический", type:1, measure:'метр.'},
+  //   {material: "Лоток металлический", type:1, measure:'м.'},
   //   {material: "Кронштейн",           type:0, measure:'шт.'  },
   //   {material: "Подвес",              type:0, measure:'шт.'  },
   //   {material: "Крышка",              type:0, measure:'шт.'  },
