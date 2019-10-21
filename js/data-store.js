@@ -160,8 +160,8 @@
   { // 9 ===================================================================== 9
     materials:[
       {material: "Распаечная коробока"},
-      {material: "Наружная",  type:1},
-      {material: "Внутренняя",type:2}
+      {material: "наружная",  type:1},
+      {material: "внутренняя",type:2}
     ],
     parameters:[
       {parameter: "размеры"},
@@ -173,28 +173,49 @@
   { // 10 ===================================================================== 10
     materials:[
       {material: "Установка автоматов"},
-      {material: "Автомат", type:1},
+      {material: "автомат", type:1},
       {material: "УЗО",     type:2}
     ],
     parameters:[
       {parameter: "типы"},
-      {parameter: "Однополюсной",   type:1, price:210, measure:'шт.'},
-      {parameter: "Двухполюсный",   type:1, price:270, measure:'шт.'},
-      {parameter: "Трёхполюсный",   type:1, price:390, measure:'шт.'},
-      {parameter: "Двухполюсное",   type:2, price:450, measure:'шт.'},
-      {parameter: "Четырёхполюсное",type:2, price:680, measure:'шт.'}
+      {parameter: "однополюсной",   type:1, price:210, measure:'шт.'},
+      {parameter: "двухполюсный",   type:1, price:270, measure:'шт.'},
+      {parameter: "трёхполюсный",   type:1, price:390, measure:'шт.'},
+      {parameter: "двухполюсное",   type:2, price:450, measure:'шт.'},
+      {parameter: "четырёхполюсное",type:2, price:680, measure:'шт.'}
     ]
   },
   { // 11 ===================================================================== 11
     materials:[
-      {material: ""},
-      {material: "", type:1}
-
+      {material: "Установка бокса (щитка)"},
+      {material: "накладной",              type:1},
+      {material: "внутренний гипсокартон", type:2},
+      {material: "внутренний кирпич",      type:3},
+      {material: "внутренний бетон",       type:4}
     ],
     parameters:[
-      {parameter: ""},
-      {parameter: "", type:1, price:5, measure:'м. '},
-
+      {parameter: "размер шкафа"},
+      {parameter: "до 24 модулей", type:1, price:900,  measure:'шт.'},
+      {parameter: "до 36 модулей", type:1, price:1500, measure:'шт.'},
+      {parameter: "до 54 модулей", type:1, price:2500, measure:'шт.'},
+      {parameter: "до 6  модулей", type:2, price:1400, measure:'шт.'},
+      {parameter: "до 12 модулей", type:2, price:1800, measure:'шт.'},
+      {parameter: "до 24 модулей", type:2, price:2500, measure:'шт.'},
+      {parameter: "до 36 модулей", type:2, price:2900, measure:'шт.'},
+      {parameter: "до 54 модулей", type:2, price:3500, measure:'шт.'},
+      {parameter: "до 96 модулей", type:2, price:5900, measure:'шт.'},
+      {parameter: "до 6 модулей",  type:3, price:1900, measure:'шт.'},
+      {parameter: "до 12 модулей", type:3, price:2500, measure:'шт.'},
+      {parameter: "до 24 модулей", type:3, price:3500, measure:'шт.'},
+      {parameter: "до 36 модулей", type:3, price:3900, measure:'шт.'},
+      {parameter: "до 54 модулей", type:3, price:4500, measure:'шт.'},
+      {parameter: "до 96 модулей", type:3, price:7500, measure:'шт.'},
+      {parameter: "до 6 модулей",  type:4, price:2900, measure:'шт.'},
+      {parameter: "до 12 модулей", type:4, price:3600, measure:'шт.'},
+      {parameter: "до 24 модулей", type:4, price:4800, measure:'шт.'},
+      {parameter: "до 36 модулей", type:4, price:5200, measure:'шт.'},
+      {parameter: "до 54 модулей", type:4, price:5800, measure:'шт.'},
+      {parameter: "до 96 модулей", type:4, price:9500, measure:'шт.'},
     ]
   },
   { // 12 ===================================================================== 12
