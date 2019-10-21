@@ -220,86 +220,112 @@
   },
   { // 12 ===================================================================== 12
     materials:[
-      {material: ""},
-      {material: "", type:1}
-
+      {material: "Электросчетчик"},
+      {material: "установка счётчика", type:1}
     ],
     parameters:[
-      {parameter: ""},
-      {parameter: "", type:1, price:5, measure:'м. '},
-
+      {parameter: "тип"},
+      {parameter: "однофазный", type:1, price:950,  measure:'шт.'},
+      {parameter: "трёхфазный", type:1, price:1400, measure:'шт.'},
     ]
   },
   { // 13 ===================================================================== 13
     materials:[
-      {material: ""},
-      {material: "", type:1}
-
+      {material: "Установка розеток"},
+      {material: "внутренняя", type:1},
+      {material: "наружная",   type:2}
     ],
     parameters:[
-      {parameter: ""},
-      {parameter: "", type:1, price:5, measure:'м. '},
-
+      {parameter: "тип розетки"},
+      {parameter: "бытовая розетка",         type:1, price:200, measure:'шт.'},
+      {parameter: "компьютерная (интернет)", type:1, price:200, measure:'шт.'},
+      {parameter: "ТВ розетка",              type:1, price:200, measure:'шт.'},
+      {parameter: "телефонная",              type:1, price:200, measure:'шт.'},
+      {parameter: "для электроплиты",        type:1, price:500, measure:'шт.'},
+      {parameter: "бытовая розетка",         type:2, price:250, measure:'шт.'},
+      {parameter: "компьютерная (интернет)", type:2, price:250, measure:'шт.'},
+      {parameter: "ТВ розетка",              type:2, price:250, measure:'шт.'},
+      {parameter: "телефонная",              type:2, price:250, measure:'шт.'},
+      {parameter: "для электроплиты",        type:2, price:500, measure:'шт.'}
     ]
   },
   { // 14 ===================================================================== 14
     materials:[
-      {material: ""},
-      {material: "", type:1}
-
+      {material: "Установка выключателей"},
+      {material: "Внутренний",             type:1},
+      {material: "Наружный",               type:2},
+      {material: "Диммер",                 type:3},
+      {material: "Реостат(терморегулятор)",type:4}
     ],
     parameters:[
-      {parameter: ""},
-      {parameter: "", type:1, price:5, measure:'м. '},
-
+      {parameter: "тип"},
+      {parameter: "1 клавишный",            type:1, price:180, measure:'шт.'},
+      {parameter: "1 клавишный  проходной", type:1, price:250, measure:'шт.'},
+      {parameter: "2 клавишный",            type:1, price:200, measure:'шт.'},
+      {parameter: "2 клавишный проходной",  type:1, price:300, measure:'шт.'},
+      {parameter: "1 клавишный",            type:2, price:220, measure:'шт.'},
+      {parameter: "1 клавишный  проходной", type:2, price:250, measure:'шт.'},
+      {parameter: "2 клавишный",            type:1, price:250, measure:'шт.'},
+      {parameter: "2 клавишный проходной",  type:1, price:340, measure:'шт.'},
+      {parameter: "обычный",                type:3, price:250, measure:'шт.'},
+      {parameter: "обычный",                type:4, price:500, measure:'шт.'}
     ]
   },
   { // 15 ===================================================================== 15
     materials:[
-      {material: ""},
-      {material: "", type:1}
-
+      {material: "Установка светильников"},
+      {material: "Светодиодная лента", type:1},
+      {material: "Светильник",         type:2},
+      {material: "Люстра",             type:3}
     ],
     parameters:[
-      {parameter: ""},
-      {parameter: "", type:1, price:5, measure:'м. '},
-
+      {parameter: "тип"},
+      {parameter: "лента светодиодная",  type:1, price:300, measure:'м.' },
+      {parameter: "настенный Бра",       type:2, price:300, measure:'шт.'},
+      {parameter: "армстронг",           type:2, price:350, measure:'шт.'},
+      {parameter: "потолочный накладной",type:2, price:450, measure:'шт.'},
+      {parameter: "точечный",            type:2, price:300, measure:'шт.'},
+      {parameter: "креплением,сложная",  type:2, price:1500,measure:'шт.'},
+      {parameter: "креплением на крюк",  type:2, price:800, measure:'шт.'}
     ]
   },
   { // 16 ===================================================================== 16
     materials:[
-      {material: ""},
-      {material: "", type:1}
-
+      {material: "Установка вытяжки"},
+      {material: "Вентилятор", type:1}
     ],
     parameters:[
-      {parameter: ""},
-      {parameter: "", type:1, price:5, measure:'м. '},
-
+      {parameter: "тип вентилятора"},
+      {parameter: "канальный накладной",     type:1, price:550, measure:'шт.'},
+      {parameter: "накладной(ванная,кухня)", type:1, price:850, measure:'шт.'}
     ]
   },
   { // 17 ===================================================================== 17
     materials:[
-      {material: ""},
-      {material: "", type:1}
-
+      {material: "Монтаж теплого пола"},
+      {material: "электрический", type:1}
     ],
     parameters:[
-      {parameter: ""},
-      {parameter: "", type:1, price:5, measure:'м. '},
-
+      {parameter: "тёплый пол"},
+      {parameter: "площадь", type:1, price:700, measure:'м².'}
     ]
   },
   { // 18 ===================================================================== 18
     materials:[
-      {material: ""},
-      {material: "", type:1}
-
+      {material: "Демонтажные работы"},
+      {material: "демонтаж электрики", type:1}
     ],
     parameters:[
-      {parameter: ""},
-      {parameter: "", type:1, price:5, measure:'м. '},
-
+      {parameter: "демонтаж"},
+      {parameter: "вентилятора",        type:1, price:100, measure:'шт.'},
+      {parameter: "светильника, бра",   type:1, price:100, measure:'шт.'},
+      {parameter: "выключателя",        type:1, price:80,  measure:'шт.'},
+      {parameter: "розетки накладной",  type:1, price:80,  measure:'шт.'},
+      {parameter: "розетки встроенной", type:1, price:80,  measure:'шт.'},
+      {parameter: "звонка",             type:1, price:80,  measure:'шт.'},
+      {parameter: "Патрона (отдельно висящего)", type:1, price:50, measure:'шт.'},
+      {parameter: "Электропроводки",       type:1, price:20, measure:'м.'},
+      {parameter: "Кабель-канала (короба)",type:1, price:20, measure:'м.'}
     ]
   }
 ]
