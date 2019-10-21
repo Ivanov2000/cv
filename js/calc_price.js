@@ -8,7 +8,6 @@ function createTableCalculator(data){
   data.forEach((item, index)=>(
     fragment.appendChild( tableLine(index, item))
   ))
-
   return fragment
 }
 
