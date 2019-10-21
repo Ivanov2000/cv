@@ -164,7 +164,7 @@
       {material: "Внутренняя",type:2}
     ],
     parameters:[
-      {title_parameter: "размеры"},
+      {parameter: "размеры"},
       {parameter: "80 Х80 Х60 мм",  type:1, price:250, measure:'шт.'},
       {parameter: "100 Х100 Х60 мм",type:1, price:250, measure:'шт.'},
       {parameter: "Ø80 мм",         type:2, price:250, measure:'шт.'}
@@ -172,14 +172,17 @@
   },
   { // 10 ===================================================================== 10
     materials:[
-      {material: ""},
-      {material: "", type:1}
-
+      {material: "Установка автоматов"},
+      {material: "Автомат", type:1},
+      {material: "УЗО",     type:2}
     ],
     parameters:[
-      {title_parameter: ""},
-      {parameter: "", type:1, price:5, measure:'м. '},
-
+      {parameter: "типы"},
+      {parameter: "Однополюсной",   type:1, price:210, measure:'шт.'},
+      {parameter: "Двухполюсный",   type:1, price:270, measure:'шт.'},
+      {parameter: "Трёхполюсный",   type:1, price:390, measure:'шт.'},
+      {parameter: "Двухполюсное",   type:2, price:450, measure:'шт.'},
+      {parameter: "Четырёхполюсное",type:2, price:680, measure:'шт.'}
     ]
   },
   { // 11 ===================================================================== 11
@@ -189,7 +192,7 @@
 
     ],
     parameters:[
-      {title_parameter: ""},
+      {parameter: ""},
       {parameter: "", type:1, price:5, measure:'м. '},
 
     ]
@@ -201,7 +204,7 @@
 
     ],
     parameters:[
-      {title_parameter: ""},
+      {parameter: ""},
       {parameter: "", type:1, price:5, measure:'м. '},
 
     ]
@@ -213,7 +216,7 @@
 
     ],
     parameters:[
-      {title_parameter: ""},
+      {parameter: ""},
       {parameter: "", type:1, price:5, measure:'м. '},
 
     ]
@@ -225,7 +228,7 @@
 
     ],
     parameters:[
-      {title_parameter: ""},
+      {parameter: ""},
       {parameter: "", type:1, price:5, measure:'м. '},
 
     ]
@@ -237,7 +240,7 @@
 
     ],
     parameters:[
-      {title_parameter: ""},
+      {parameter: ""},
       {parameter: "", type:1, price:5, measure:'м. '},
 
     ]
@@ -249,7 +252,7 @@
 
     ],
     parameters:[
-      {title_parameter: ""},
+      {parameter: ""},
       {parameter: "", type:1, price:5, measure:'м. '},
 
     ]
@@ -261,7 +264,7 @@
 
     ],
     parameters:[
-      {title_parameter: ""},
+      {parameter: ""},
       {parameter: "", type:1, price:5, measure:'м. '},
 
     ]
@@ -273,7 +276,7 @@
 
     ],
     parameters:[
-      {title_parameter: ""},
+      {parameter: ""},
       {parameter: "", type:1, price:5, measure:'м. '},
 
     ]
