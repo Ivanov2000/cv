@@ -544,7 +544,11 @@ select {
 	 max-width: 100%;
    font-size: 17px;
    line-height: 24px;
+<<<<<<< HEAD
 	 color: #647373;
+=======
+	 color: #647373; /* ЦВЕТ ТЕКСТА В КАЛЬКУЛЯТОРЕ */
+>>>>>>> gh-pages
    background: #D3D9D9;
 }
 
@@ -557,7 +561,11 @@ input[type="password"]:focus,
 input[type="email"]:focus,
 textarea:focus {
    color: #B3B7BC;
+<<<<<<< HEAD
 	 background-color: #3d4145;
+=======
+	 background-color: #3d4145;  /* ЦВЕТ Калькулятор*/
+>>>>>>> gh-pages
 }
 
 textarea { min-height: 220px; }
@@ -800,3 +808,36 @@ properly.
 	margin-right: auto !important;
 	text-align: center !important;
 }
+<<<<<<< HEAD
+=======
+
+.white{
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media (min-width:100px) and (max-width:1018px) {
+  .calculator-hide{
+       display:none;
+  }
+}
+
+@media (min-width:769px) and (max-width:2408px){
+  .section-h1{
+    margin-top: 5.0rem;
+  }
+}
+
+@media (min-width:200px) and (max-width:768px) {
+   .section-block{
+     background:#D3D9D9;
+   }
+   .section-h1{
+     margin-top: 3.1rem;
+   }
+   .section-txt{
+     font-size: 1.8rem;
+     text-align:justify;
+   }
+
+}
+>>>>>>> gh-pages

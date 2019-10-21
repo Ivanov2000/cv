@@ -7,7 +7,7 @@
   <!--- Basic Page Needs
   ================================================== -->
   <meta charset="utf-8">
-	<title>CeeVee - Free Responsive HTML5/CSS3 Template</title>
+	<title>Электрик в Санкт-Петербурге</title>
 	<meta name="description" content="электрик в санкт-петербурге (спб)">
 	<meta name="author" content="александр иванов инженер электрик">
   <meta name="yandex-verification" content="82cc36caca6b41b8" />
@@ -26,10 +26,10 @@
   ================================================== -->
 	<script src="js/modernizr.js"></script>
 
-  <!-- Calculator
-  ================================================== -->
-  <script type="text/javascript" src="js/data.js"></script>
-	<script type="text/javascript" src="js/calculator.js"></script>
+ <!-- Calc_Price
+ ================================================== -->
+ <script type="text/javascript" src="js/data_price.js"></script>
+ <script type="text/javascript" src="js/calc_price.js"></script>
 
    <!-- Favicons
 	================================================== -->
@@ -52,7 +52,8 @@
 
          <ul id="nav" class="nav">
             <!-- <li class="current"><a class="smoothscroll" href="#home">Home</a></li> -->
-	          <li><a class="smoothscroll" href="#styles">Производство электромонтажных работ в Cанкт-Петербурге</a></li>
+	          <li><a class="smoothscroll" href="#home">
+              Производство электромонтажных работ в Cанкт-Петербурге</a></li>
          </ul> <!-- end #nav -->
 
       </nav> <!-- end #nav-wrap -->
@@ -66,8 +67,10 @@
             <hr />
             <h4 style="color: #fff;">электрика в квартирах, домах, офисах, дачных участках</h4>
             <hr />
-            <h2 style="color: #fff;">+7 965 046-59-39
-              <span style="padding-left: 20px"><a href="#" style="color: #00BFFF;">gremm87@yandex.ru</a></span></h2>
+            <h2 style="color: #fff;">
+              <span style="padding-right:20px">+7 965 046-59-39</span>
+                <a href="mailto:gremm87@yandex.ru" style="color: #00BFFF;">gremm87@yandex.ru</a>
+            </h2>
          </div>
       </div>
 
@@ -77,19 +80,19 @@
 
    </header> <!-- Header End -->
 
-  <!-- About Section
-  ================================================== -->
-  <section id="about">
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
       <div class="row">
          <div class="three columns">
             <img class="profile-pic"  src="images/profilepic.jpg" alt="" />
          </div>
          <div class="nine columns main-col">
-            <h2>Александр Иванов &nbsp;<i>инженер электрик</i></h2>
-            <p>
+            <h2>Александр Иванов &nbsp; <i style="white-space:nowrap;">инженер электрик</i></h2>
+            <p class="section-txt">
               Выполню электромонтажные работы у вас дома, офисе, квартире. Соберу автоматику,  электрощит.
               Мой опыт работы в области производства электромонтажных работ составляет 8 лет.
-              Мною даётся гарантия качества выполненных электромонтажных  работ, и составляет 5 лет.
+              Мною даётся гарантия качества выполненных электромонтажных  работ на 5 лет.
               Изготовление шкафов автоматики для ваших нужд. Разработка логических схем,  сборка, установка, пусконаладочные работы.
             </p><br>
 
@@ -98,14 +101,20 @@
                   <h2>+7 965 046-59-39</h2>
                   <p class="address">
                     <!-- Актуальные цены представлены на каждый вид основных работ. -->
-                  <span>Заказ работ</span><br>
-                  <span>Отвечу на ваши вопросы</span><br>
-                  <span><a href="#" style="color: #00BFFF;">gremm87@yandex.ru</a></span>
+                  <span>Заказ работ в Санкт-Петербурге</span>
+
+                  <span><a href="mailto:gremm87@yandex.ru" style="color: #00BFFF;font-size:1.7rem;">
+                    gremm87@yandex.ru</a></span>
+                    <br>
+                    <hr/>
+                    написать мне в социальной сети
+                  <span><a href="https://vk.com/elektric_spb1" style="color: #00BFFF;font-size:1.8rem;">
+                    вконтакте</a></span>
                   </p>
                </div>
                <div class="columns download">
                   <p>
-                     <a href="#" class="button"><i class="fa fa-download"></i>Скачать прайс лист</a>
+                     <a href="file/price_2019.xlsx" class="button"><i class="fa fa-download"></i>Скачать прайс лист</a>
                   </p>
                </div>
             </div> <!-- end row -->
@@ -113,465 +122,53 @@
       </div>
    </section> <!-- About Section End-->
 
-  <!--
-  ================================================== -->
-  <section>
-    <div class="row">
-      <div class="twelve columns">
-        <h2 class="white">Калькулятор</h2>
-        <br>
-      </div>
-    </div>
-  </section>
+   <!-- Calculator Price
+   ================================================== -->
+   <section class="calculator-hide">
+     <div class="row">
+       <div class="twelve columns"><br>
+         <h2 class="white text-center" id="total">Калькулятор расчёта работ</h2><br>
+       </div>
+       <div class="three columns">
+          <p class="lead text-center">Монтаж</p>
+       </div>
+       <div class="three columns">
+          <p class="lead text-center">Выбор параметров</p>
+       </div>
+       <div class="three columns">
+         <p class="lead text-center">Укажите колличество</p>
+       </div>
+       <div class="three columns">
+         <p class="lead text-center">Стоимость</p>
+       </div>
+     </div>
+   </section>
+   <section class="calculator-hide" style="padding:34px; background:#fff;">
+     <div class="row" id="calculator"></div>
+   </section>
 
-  <!-- Calculator Price
-  ================================================== -->
-  <section style="padding:30px; background:#fff;">
-    <div class="row" id="calculator"></div>
-  </section>
-
-  <!-- Style Guide Section
-  ================================================== -->
-  <section id="styles" style="padding: 90px 0 72px; background: #fff;">
-      <div class="row add-bottom">
+   <!-- Section txt
+   ================================================== -->
+   <section class="section-block" id="none">
+      <div class="row" style="background:#D3D9D9;">
          <div class="twelve columns">
-            <h1>Электромонтажные работы</h1>
-            <p class="lead add-bottom">
-              Работы любой сложности от ввода силового кабеля в дом,
-               до установки розеток и выключателей. Сборка, монтаж
-               электрощита, автоматы и электросчетчики. Установка,
-                подключение бытовой техники. Тёплый пол. Освещение
-                 в доме, коттедже: светильники, люстры, бра.
-                 Системы освещения периметра участка: светодиодные
-                 лампы, прожекторы, подсветка фасада здания.
-                 Видеонаблюдение в деревянном доме, коттедже. Ремонт электрики.
+            <h2 class="section-h1">Электромонтажные работы</h2>
+            <hr/>
+            <p class="section-txt">
+               Работы любой сложности от ввода силового кабеля в дом,
+               до установки розеток и выключателей. Сборка, монтаж электрощита,
+               автоматы и электросчетчики. Установка, подключение бытовой техники.
+               Тёплый пол. Освещение в доме, коттедже: светильники, люстры, бра.
+               Системы освещения периметра участка:
+               светодиодные лампы, прожекторы, подсветка фасада здания.
+               Видеонаблюдение в деревянном доме, коттедже. Ремонт электрики.
+               <br>
             </p>
-            <hr>
+            <hr/>
+            <br>
          </div>
       </div> <!-- Row End-->
-
-
-      <div class="row">
-        <div class="four columns">
-          <p>Установка и подключение электрощитов 220 В, 380 В в Санкт-Петербурге (СПб) и Ленобласти.
-             Перенос электрощитков в квартирах и на дачах (на уличных столбах/опорах).
-             Углубление в стене. Перекоммутация.
-           </p>
-        </div>
-         <div class="four columns">
-          <p>Диагностика неисправностей и их устранение, ремонт электрощита - недорого, с гарантией!
-            Сборка и монтаж распределительного щитка в квартире или на []лестничной площадке.
-            Установка элитных, дорогих электрощитов.
-          </p>
-        </div>
-         <div class="four columns">
-          <p>
-            Услуги электрика в школе, детском саду, поликлинике, больнице.
-            Коммерческие помещения, производство, склады, магазины, кафе, рестораны,
-            торговые или бизнес центры (павильоны, офисы). Недорогая диагностика и ремонт.
-          </p>
-        </div>
-      </div>
-
-      <!--<h4>1/4 Columns</h4>  -->
-
-      <div class="row">
-
-         <div class="three columns">
-          <p>
-            Электрощит в квартире, на даче, в частном деревенском доме, деревянном или кирпичном
-            коттедже - цена за сборку, стоимость установки и подключения зависит в основном от
-            количества внутренних модулей-элементов 8, 16, 32... , необходимых для корректной работы.
-          </p>
-        </div>
-
-         <div class="three columns">
-          <p>
-            Кроме того далеко не последнюю роль играют сопутствующие работы электрика
-            (высотные и земляные работы, монтаж кабеля по земле - в траншее/по воздуху - на высоте,
-            копка, засыпка траншеи и др.). Электропроводка под ключ - электромонтажные работы и монтаж электрики.
-          </p>
-        </div>
-
-        <div class="three columns">
-          <p>
-          Монтаж электропроводки не терпит неквалифицированного вмешательства дилетантов, доверьте выполнение
-          профессионалам и получите гарантию безопасности вашего жилища на долгие годы. Разводка электрики,
-          монтаж, замена электропроводки в СПб
-          </p>
-        </div>
-
-        <div class="three columns">
-          <p>
-            После окончания выдается официальная гарантия на монтаж электропроводки от 12 до 36 месяцев.
-            На электромонтаж в квартире, частном доме под ключ действует расширенная гарантия сроком 5 (пять) лет.
-            Требуется консультация, звоните.
-          </p>
-        </div>
-
-      </div>
-
-      <!--<h4>1/2 Columns</h4>  -->
-
-      <div class="row">
-
-         <div class="six columns">
-           <p>
-             Я отношусь к работе со всей ответственностью,  имею большой опыт в данной сфере услуг.
-             Профильное образование и профессиональный инструмент основной показатель качества выполненных электромонтажных работ.
-           </p>
-         </div>
-
-         <div class="six columns">
-           <p>
-            Монтаж электропроводки в квартире, в деревянном или кирпичном доме в Санкт-Петербурге (СПб)
-            и пригороде. Проведу подготовительные работы по штроблению бетонных
-            и кирпичных стен, потолков для разводки скрытой электропроводки.
-           </p>
-         </div>
-
-      </div>
-
-      <!--<h4>2/3 Columns</h4>  -->
-
-      <div class="row">
-
-         <div class="eight columns">
-            <p>
-              Основная специализация «ЭЛЕКТРИК СПБ» производство электромонтажных работ в частном секторе.
-              Работаю на рынке электротехнических услуг Санкт-Петербурга и Ленинградской области с 2008 года и
-              накопили большой опыт в монтаже электропроводки квартир и частных домов под ключ.
-            </p>
-         </div>
-
-         <div class="four columns">
-            <p>Все электромонтажные работы выполнены по электрическим и дизайнерским проектам,
-             тех. заданиям и пожеланиям заказчиков под ключ. </p>
-         </div>
-
-      </div>
-
-      <!--<h4>3/4 Columns</h4>  -->
-
-      <div class="row">
-
-         <div class="three columns">
-          <p>Электрощит в квартире, на даче, в частном доме, кирпичном коттедже - стоимость
-          установки и подключения зависит в основном от количества внутренних модулей-элементов (8, 16, 32...). </p>
-        </div>
-
-         <div class="nine columns">
-          <p>Подключение бытовой техники, настройка, пуско-наладочные ьработы, обслуживание электрооборудования.
-            Установка электрогенератора, заземления, громоотвода, в частном доме, на даче.
-           Монтаж систем освещения, осветительных приборов, уличных фонарей, светодиодных и галогенных ламп,
-            светильников, подвес люстры, бра и многое другое.
-           Услуги электрика в Санкт-Петербурге (СПб), пригороде, Ленобласти для частных лиц и организаций.
-           Ремонт электрощитов, монтаж автоматов и электросчетчиков в щитке. Диагностика неисправностей
-           электрики, полная и локальная замена электропроводки в квартире, на даче, штробление стен под
-          кабель. Системы безопасности - видеонаблюдение и видеодомофоны.
-        </p>
-        </div>
-
-      </div>
    </section> <!-- Resume Section End-->
-
-  <!-- Portfolio Section
-  ================================================== -->
-  <section id="portfolio">
-
-      <div class="row">
-
-         <div class="twelve columns collapsed">
-
-            <h1>Несколько моих работ</h1>
-
-            <!-- portfolio-wrapper -->
-            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-01" title="">
-                        <img alt="" src="images/portfolio/1.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-                          <h5>Coffee</h5>
-                              <p>Illustrration</p>
-                       </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-              </div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-02" title="">
-                        <img alt="" src="images/portfolio/1.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-                          <h5>Console</h5>
-                              <p>Web Development</p>
-                       </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-              </div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-03" title="">
-                        <img alt="" src="images/portfolio/1.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-                          <h5>Judah</h5>
-                              <p>Webdesign</p>
-                       </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-              </div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-04" title="">
-                        <img alt="" src="images/portfolio/1.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-                          <h5>Into The Light</h5>
-                              <p>Photography</p>
-                       </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-              </div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-05" title="">
-                        <img alt="" src="images/portfolio/1.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-                          <h5>Farmer Boy</h5>
-                              <p>Branding</p>
-                       </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-              </div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-06" title="">
-                        <img alt="" src="images/portfolio/1.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-                          <h5>Girl</h5>
-                              <p>Photography</p>
-                       </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-              </div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-07" title="">
-                        <img alt="" src="images/portfolio/1.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-                          <h5>Origami</h5>
-                              <p>Illustrration</p>
-                       </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-              </div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-08" title="">
-                        <img alt="" src="images/portfolio/1.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-                          <h5>Retrocam</h5>
-                              <p>Web Development</p>
-                       </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-              </div>  <!-- item end -->
-
-            </div> <!-- portfolio-wrapper end -->
-
-         </div> <!-- twelve columns end -->
-
-
-         <!-- Modal Popup
-        --------------------------------------------------------------- -->
-
-         <div id="modal-01" class="popup-modal mfp-hide">
-
-          <img class="scale-with-grid" src="images/portfolio/modals/m-1.jpg" alt="" />
-
-          <div class="description-box">
-            <h4>Coffee Cup</h4>
-            <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>
-          </div>
-
-            <div class="link-box">
-               <a href="#" target="_blank"></a>
-             <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-        </div><!-- modal-01 End -->
-
-         <div id="modal-02" class="popup-modal mfp-hide">
-
-          <img class="scale-with-grid" src="images/portfolio/modals/m-1.jpg" alt="" />
-
-          <div class="description-box">
-            <h4>Console</h4>
-            <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding, Web Development</span>
-          </div>
-
-            <div class="link-box">
-               <a href="#" target="_blank"></a>
-             <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-        </div><!-- modal-02 End -->
-
-         <div id="modal-03" class="popup-modal mfp-hide">
-
-          <img class="scale-with-grid" src="images/portfolio/modals/m-1.jpg" alt="" />
-
-          <div class="description-box">
-            <h4>Judah</h4>
-            <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding</span>
-          </div>
-
-            <div class="link-box">
-              <a href="#" target="_blank"></a>
-             <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-        </div><!-- modal-03 End -->
-
-         <div id="modal-04" class="popup-modal mfp-hide">
-
-          <img class="scale-with-grid" src="images/portfolio/modals/m-1.jpg" alt="" />
-
-          <div class="description-box">
-            <h4>Into the Light</h4>
-            <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Photography</span>
-          </div>
-
-            <div class="link-box">
-               <a href="#" target="_blank"></a>
-             <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-        </div><!-- modal-04 End -->
-
-         <div id="modal-05" class="popup-modal mfp-hide">
-
-          <img class="scale-with-grid" src="images/portfolio/modals/m-1.jpg" alt="" />
-
-          <div class="description-box">
-            <h4>Farmer Boy</h4>
-            <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>
-          </div>
-
-            <div class="link-box">
-               <a href="#" target="_blank"></a>
-             <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-        </div><!-- modal-05 End -->
-
-         <div id="modal-06" class="popup-modal mfp-hide">
-
-          <img class="scale-with-grid" src="images/portfolio/modals/m-1.jpg" alt="" />
-
-          <div class="description-box">
-            <h4>Girl</h4>
-            <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Photography</span>
-          </div>
-
-            <div class="link-box">
-               <a href="#" target="_blank"></a>
-             <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-        </div><!-- modal-06 End -->
-
-         <div id="modal-07" class="popup-modal mfp-hide">
-
-          <img class="scale-with-grid" src="images/portfolio/modals/m-1.jpg" alt="" />
-
-          <div class="description-box">
-            <h4>Origami</h4>
-            <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding, Illustration</span>
-          </div>
-
-            <div class="link-box">
-               <a href="#" target="_blank"></a>
-             <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-        </div><!-- modal-07 End -->
-
-         <div id="modal-08" class="popup-modal mfp-hide">
-
-          <img class="scale-with-grid" src="images/portfolio/modals/m-1.jpg" alt="" />
-
-          <div class="description-box">
-            <h4>Retrocam</h4>
-            <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Webdesign, Photography</span>
-          </div>
-
-            <div class="link-box">
-               <a href="#" target="_blank"></a>
-             <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-        </div><!-- modal-01 End -->
-
-
-      </div> <!-- row End -->
-
-   </section> <!-- Portfolio Section End-->
 
   <!-- footer
   ================================================== -->
@@ -580,11 +177,13 @@
       <div class="row">
          <div class="twelve columns">
             <ul class="copyright">
-               <li>&copy; Copyright 2019 Санкт-Петербург</li>
-               <li>Design by <a href="http://электрикспб.рф/" title="Электрик" target="_blank">Электрик в Санкт-Петербурге</a></li>
+               <li class="white">&copy; Инженер электрик 2019
+                 <span style="white-space:nowrap;">Санкт-Петербург</span></li>
+               <li><a href="http://электрикспб.рф/" title="Электрик" target="_blank">Электромонтажные работы</a></li>
             </ul>
          </div>
-         <div id="go-top" style="display: block;"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+         <div id="go-top" style="display:block;"><a class="smoothscroll" title="Back to Top" href="#home">
+          <i class="icon-up-open"></i></a></div>
       </div>
 
    </footer> <!-- Footer End-->
@@ -599,11 +198,26 @@
    <script src="js/waypoints.js"></script>
    <script src="js/jquery.fittext.js"></script>
    <script src="js/magnific-popup.js"></script>
-   <!-- <script src="js/doubletaptogo.js"></script> -->
-   <!-- <script src="js/spin.js"></script> -->
 
    <script src="js/init.js"></script>
 
+   <script type="text/javascript">
+      /** Функция Скрывает/Показывает блок  **/
+      function showHide(element_id) {
+        //Если элемент с id-шником element_id существует
+        if (document.getElementById(element_id)) {
+          //Записываем ссылку на элемент в переменную obj
+          var obj = document.getElementById(element_id);
+          //Если css-свойство display не block, то:
+          if (obj.style.display != "block") {
+            obj.style.display = "block"; //Показываем элемент
+          }
+          else obj.style.display = "none"; //Скрываем элемент
+        }
+        //Если элемент с id-шником element_id не найден, то выводим сообщение
+        else alert("Элемент с id: " + element_id + " не найден!");
+     }
+  </script>
 
   <!-- Yandex.Metrika counter Иванов
   ================================================== -->
@@ -639,18 +253,6 @@
   <noscript><div><img src="https://mc.yandex.ru/watch/51770693" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
   <!-- //Yandex.Metrika counter -->
 
-  <!-- Global site tag (gtag.js) - Google Analytics
-  ================================================== -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146932322-1">
-  </script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-146932322-1');
-  </script>
-  <!--//Global site tag (gtag.js) - Google Analytics -->
 </body>
 
 </html>
